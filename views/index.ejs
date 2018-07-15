@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <% include template/head_js_css.ejs %>
+        <link rel="stylesheet" href="/stylesheets/index.css">
+        <meta name="description" content="WT - 全中文化網頁追蹤服務">
+    </head>
+
+    <body>
+        <% include template/header_index.ejs %>
+        <div id="banner" class="position-relative p-3 p-md-5 m-md-3 text-center bg-dark">
+            <div class="col-md-8 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal text-light"><%= headline %></h1>
+                <p class="lead text-white-50 font-weight-light"><%= paragraph %></p>
+                <a class="btn btn-outline-info font-weight-bold" href="#feature">深入了解</a>
+            </div>
+        </div>
+
+        <div id="feature" class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" style="height: 400px;">
+            <div id="feature_1" class="bg-info mr-md-3 px-3 px-md-5 text-center text-light overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">即時監控</h2>
+                    <img src="http://navantis.wpengine.com/wp-content/uploads/2015/01/MangagedMonitoringConsole.png" alt="monitoring" width="250px" style="margin: 30px 0px;">
+                    <p class="lead">儀表板即時監測網站瀏覽情形</p>
+                </div>
+            </div>
+            <div id="feature_2" class="bg-warning mr-md-3 px-3 px-md-5 text-center text-dark overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">客製追蹤</h2>
+                    <img src="https://discover.castlebranch.com/CBBridges/images/cb-icon-pro-advantage-tracker.png" alt="customized" width="193px" style="margin: 30px 0px;">
+                    <p class="lead">輕量化追蹤，資料不再眼花撩亂</p>
+                </div>
+            </div>
+            <div id="feature_3" class="bg-danger mr-md-3 px-3 px-md-5 text-center text-light overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">CRM行銷自動化</h2>
+                    <img src="https://trevisantecnologia.com.br/wp-content/uploads/connection.png" alt="crm-automation" width="412px">
+                    <p class="lead">訪客行為即時觸發郵件或訊息寄送</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div id="step" class="col-md-12 p-lg-0 mx-auto my-5 text-center">
+            <h1 class="font-weight-bold text-center py-3">三步驟超快上手</h1>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 bg-dark" style="height: 150px;">
+                <div class="col-md-4 my-3 py-3">
+                    <h3 class="text-light">Step1</h3>
+                    <p class="lead text-white-50"><a href="#">追蹤碼</a>嵌入網站</p>
+                </div>
+                <div class="col-md-4 my-3 py-3">
+                    <h3 class="text-light">Step2</h3>
+                    <p class="lead text-white-50"><a href="/dashboard">登入後台</a>自訂追蹤事件</p>
+                </div>
+                <div class="col-md-4 my-3 py-3">
+                    <h3 class="text-light">Step3</h3>
+                    <p class="lead text-white-50">設定CRM觸發條件</p>
+                </div>
+            </div>
+            <a class="btn btn-lg btn-outline-danger font-weight-normal" style="margin-top: 5px;" href="/setting">開始設置</a>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div id="case" class="row d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">操作實例</h2>
+                <p class="lead">D&T 使用WT網頁追蹤服務，透過自動化觸發結合自家電子報，提升30%購物車轉換率。</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://conductor.com/wp-content/uploads/sites/5/2015/09/meet-steve-buyer-persona-300x259.jpg" alt="persona" width="500px">
+            </div>
+        </div>
+
+        <footer id="contacts" class="py-5 bg-dark">
+            <div class="row mx-md-5">
+                <div class="col-12 col-md">
+                    <img src="http://pngimg.com/uploads/google/google_PNG19644.png" alt="" width="100px">
+                    <small class="d-block text-muted">© 2017-2018</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="text-light">聯繫我們</h5>
+                    <ul class="list-unstyled text-white-50 text-small">
+                        <li>電話：0989-960-615</li>
+                        <li>信箱：martech.tw@gmail.com</li>
+                        <li><a href="https://www.facebook.com/Abao.JiunYiYang">臉書私訊</a> 或 LINE ID：whatisid5408</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
